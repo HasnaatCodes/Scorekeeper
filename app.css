@@ -1,7 +1,4 @@
 img{
-    /* max-width: 500px;
-    max-height: 500px;
-    display: block; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +24,7 @@ p{
 }
 
 h1{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 button, select{
@@ -95,8 +92,13 @@ button, select{
     max-height: 500px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
-    padding: 10px 0;
+    border-radius: 2%;
+    background-color: white;
+  }
+
+  .score-card{
+      margin-top: 15px;
+      padding:15px 0;
   }
 
   
