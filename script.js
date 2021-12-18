@@ -10,7 +10,7 @@ const playerTwo = {
     display: document.querySelector('#playerTwoDisplay'),
 }
 
-const resetButton = document.querySelector('#reset')
+const resetButton = document.querySelector('#reset');
 const scoreSelection = document.querySelector('#topscore');
 let maxScore = 5;
 
@@ -36,17 +36,23 @@ function updateScores(player, opponent) {
     if (player.score >= maxScore) {
         player.display.style.color = 'green';
         player.button.disabled = true;
-
         opponent.display.style.color = 'red';
         opponent.button.disabled = true;
+    } else if (player.score === (maxScore - 1) && opponent.score === (maxScore - 1)) {
+        maxScore++;
+        scoreSelection.classList.add('tie-breaker');
+        scoreSelection.selectedOptions[0].innerText = `Tie BREAK to ${maxScore}`;
     }
 }
 
 function reset() {
     for (let player of [playerOne, playerTwo]) {
         player.score = 0;
+        maxScore = 5;
         player.display.textContent = 0;
         player.display.style.color = 'black';
         player.button.disabled = false;
+        scoreSelection.classList.remove('tie-breaker');
+        scoreSelection.selectedOptions[0].innerText = 5;
     }
 }

@@ -86,6 +86,11 @@ button, select{
     background-color: rgb(230, 0, 0);
 }
 
+.tie-breaker{
+    background-color: red;
+    color: white;
+}
+
 .card {
     margin-left: 50px;
     max-width: 600px;
