@@ -36,7 +36,7 @@ button, select{
     font-size: 32px;
 }
 
-#playerOne{
+#playerOne, #playerOneName{
     background-color: rgb(100, 255, 100);
     background-color: green;
     min-height: 40px;
@@ -46,7 +46,7 @@ button, select{
     min-width: 98px;
 }
 
-#playerOne:hover{
+#playerOne:hover, #playerOneName:hover{
     background-color: rgb(100, 200, 100);
 }
 
@@ -55,7 +55,7 @@ button, select{
     cursor: not-allowed;
 }
 
-#playerTwo{
+#playerTwo, #playerTwoName{
   background-color: rgb(0, 102, 255);
   min-height: 40px;
   border: none;
@@ -64,7 +64,7 @@ button, select{
   min-width: 98px;
 }
 
-#playerTwo:hover{
+#playerTwo:hover, #playerTwoName:hover{
     background-color: rgb(0, 153, 255);
 }
 
